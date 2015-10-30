@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titleTextView"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/space_normal"
+    android:paddingBottom="@dimen/space_normal"
+    android:paddingLeft="@dimen/space_normal"
+    android:paddingRight="@dimen/space_normal"
+    android:textColor="?android:textColorSecondary"
+    tools:text="Expenses" />
+

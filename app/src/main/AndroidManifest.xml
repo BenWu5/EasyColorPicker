@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ben.colorpicker">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivityNew"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PickerActivity"
+            android:label="@string/color_picker"
+            android:theme="@style/PickerTheme" />
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:label="@string/settings" />
+        <activity
+            android:name=".ui.license.LicenseActivity"
+            android:label="@string/licenses" />
+
+        <provider
+            android:name=".provider.ColorProvider"
+            android:authorities="${applicationId}.provider.ColorProvider" />
+    </application>
+
+</manifest>

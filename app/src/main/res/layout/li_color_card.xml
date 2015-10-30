@@ -1,0 +1,54 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_small"
+    android:layout_marginTop="@dimen/space_small"
+    android:layout_marginRight="@dimen/space_small"
+    android:layout_marginLeft="@dimen/space_small">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_large">
+
+        <TextView
+            android:id="@+id/color_hex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_large"
+            android:textColor="#cc000000"
+            android:textSize="16sp"
+            tools:text="#2196f3" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color_hex"
+            android:textColor="#cc000000"
+            tools:text="colorPrimary" />
+        <ImageView
+            android:id="@+id/more_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/space_normal"
+            android:src="@drawable/ic_more_vert_grey600_24dp"
+            android:tint="#ee000000" />
+
+        <ImageView
+            android:id="@+id/copy_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/space_normal"
+            android:src="@drawable/ic_content_copy_grey600_24dp"
+            android:tint="#ee000000" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

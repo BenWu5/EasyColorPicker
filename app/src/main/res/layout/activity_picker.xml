@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/image"
+        android:background="@android:color/white"
+        android:layout_above="@+id/studio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.ben.colorpicker.view.PickerView
+        android:visibility="invisible"
+        android:id="@+id/pick_view"
+        android:layout_above="@+id/studio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        layout="@layout/include_edit_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recommended_touch_size"
+        android:layout_alignParentBottom="true" />
+    <include
+        android:id="@+id/studio"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_above="@+id/image_bar"
+        layout="@layout/include_studio"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@id/image_bar"
+        android:background="@drawable/shadow_up" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/image"
+        android:background="@drawable/shadow_down" />
+
+</RelativeLayout>
+

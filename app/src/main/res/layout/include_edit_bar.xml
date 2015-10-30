@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recommended_touch_size"
+    android:background="#fafafa"
+    android:divider="?android:attr/dividerVertical"
+    android:dividerPadding="@dimen/space_normal"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_small"
+    android:showDividers="middle">
+
+    <ImageView
+        android:id="@+id/add_to_db"
+        android:layout_marginRight="@dimen/space_small"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_star_grey600_24dp" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_share_grey600_24dp" />
+
+    <ImageView
+        android:id="@+id/open_photo"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_image_grey600_24dp" />
+
+    <ImageView
+        android:id="@+id/take_photo"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_photo_camera_grey600_24dp" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_window">#f0f0f0</color>
+
+    <color name="primary_blue">#2196f3</color>
+    <color name="primary_blue_dark">#1e88e5</color>
+    <color name="primary_blue_darker">#1976d2</color>
+
+</resources>

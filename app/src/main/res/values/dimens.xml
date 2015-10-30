@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="recommended_touch_size">48dp</dimen>
+
+    <dimen name="space_xxxlarge">48dp</dimen>
+    <dimen name="space_xxlarge">32dp</dimen>
+    <dimen name="space_xlarge">24dp</dimen>
+    <dimen name="space_large">16dp</dimen>
+    <dimen name="space_normal">8dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    
+    <dimen name="rgb_and_hex_text_size">18sp</dimen>
+
+
+    <dimen name="out_circle_radius">36dp</dimen>
+    <dimen name="in_circle_radius">16dp</dimen>
+    <dimen name="center_circle_radius">2dp</dimen>
+
+    <dimen name="out_and_in_circle_width">8dp</dimen>
+    <dimen name="center_circle_width">1dp</dimen>
+
+    <dimen name="space_circle">64dp</dimen>
+
+</resources>

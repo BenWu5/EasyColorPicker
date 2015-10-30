@@ -1,0 +1,7 @@
+
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recyclerView"
+    style="@style/AdapterView"
+    android:paddingLeft="@dimen/space_small"
+    android:paddingRight="@dimen/space_small"
+    />

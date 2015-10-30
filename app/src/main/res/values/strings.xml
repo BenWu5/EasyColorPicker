@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">ColorPicker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="color_picker">Color picker</string>
+    <string name="settings">Setting</string>
+    <string name="color_list">Color list</string>
+    <string name="color_lens">Color lens</string>
+    <string name="RGB">RGB:</string>
+    <string name="HEX">HEX:</string>
+    <string name="note">Note</string>
+    <string name="about">About</string>
+    <string name="contact_us">Contact us</string>
+    <string name="git_hub">Github</string>
+    <string name="licenses">Licenses</string>
+    <string name="clear_list">Clear list</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="color">Color</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="version">Version</string>
+    <string name="clear_list_yes_or_no">confirmed to delete? The data could not be resumed</string>
+
+    <string name="photo_view_license">Copyright 2011, 2012 Chris Banes\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at \n
+        \n
+        http://www.apache.org/licenses/LICENSE-2.0
+        \n\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+    </string>
+    <string name="color_picker_license">
+        Copyright (C) 2015 Tvbarthel.\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at \n\n
+
+    http://www.apache.org/licenses/LICENSE-2.0
+\n\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+    </string>
+    <string name="added_to_list">Added to list</string>
+
+</resources>

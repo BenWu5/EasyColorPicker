@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/space_large"
+    android:paddingRight="@dimen/space_large"
+    android:paddingTop="@dimen/space_large"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/color_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/space_normal"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
+        android:layout_marginTop="@dimen/space_small"
+        android:background="?attr/colorPrimary" />
+
+    <EditText
+        android:id="@+id/hex_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_normal"
+        android:editable="false"
+        android:gravity="center_horizontal"
+        tools:text="#ffffff" />
+
+    <EditText
+        android:id="@+id/note_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_normal"
+        android:gravity="center_horizontal"
+        android:hint="@string/note"
+        tools:text="note" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/date_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_normal"
+            android:layout_weight="1"
+            android:editable="false"
+            android:gravity="center_horizontal"
+            android:hint="@string/date" />
+
+        <EditText
+            android:editable="false"
+            android:focusable="false"
+            android:id="@+id/time_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_normal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:hint="@string/time" />
+
+    </LinearLayout>
+</LinearLayout>
