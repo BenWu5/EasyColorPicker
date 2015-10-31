@@ -3,7 +3,7 @@
 ![](https://github.com/developerbenwu/EasyColorPicker/blob/master/sreenshot/Screenshot_20151031-152150.png)
 ![](https://github.com/developerbenwu/EasyColorPicker/blob/master/sreenshot/Screenshot_20151031-152109.png)
 
-# 6. License
+#  License
 
     Copyright 2015 GavinCT
 
