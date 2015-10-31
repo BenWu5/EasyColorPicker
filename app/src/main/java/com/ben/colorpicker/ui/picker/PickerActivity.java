@@ -1,4 +1,4 @@
-package com.ben.colorpicker.ui;
+package com.ben.colorpicker.ui.picker;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,6 +14,8 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
 import com.ben.colorpicker.R;
+import com.ben.colorpicker.ui.ColorDialog;
+import com.ben.colorpicker.ui.common.SelectPhotoActivity;
 import com.ben.colorpicker.utils.CopyUtils;
 import com.ben.colorpicker.view.MyPhotoViewAttacher;
 import com.ben.colorpicker.view.PickerView;
@@ -64,7 +66,6 @@ public class PickerActivity extends SelectPhotoActivity implements View.OnClickL
         textPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
         textPaint.density = getResources().getDisplayMetrics().density;
         textPaint.setTextSize(getResources().getDimensionPixelSize(R.dimen.rgb_and_hex_text_size));
-//        textPaint.setTextSize(100);
         textPaint.setColor(Color.BLACK);
 
 
@@ -127,7 +128,7 @@ public class PickerActivity extends SelectPhotoActivity implements View.OnClickL
     }
 
     @Override
-    void setBitmapUri(Uri uri) throws FileNotFoundException {
+    public void setBitmapUri(Uri uri) throws FileNotFoundException {
         setLockImageView(false);
         mImageView.setImageBitmap(getBitmapByUri(uri));
         mAttacher.update();
@@ -136,11 +137,11 @@ public class PickerActivity extends SelectPhotoActivity implements View.OnClickL
     private void setLockImageView(boolean isLocked) {
         mAttacher.setIsLocked(isLocked);
         if (!mAttacher.isLocked()) {
-            lockButton.setImageResource(R.drawable.ic_lock_outline_grey600_24dp);
+            lockButton.setImageResource(R.drawable.ic_colorize_off_grey600_24dp);
             mPickView.setVisibility(View.INVISIBLE);
             mPickView.setIsClear(true);
         } else {
-            lockButton.setImageResource(R.drawable.ic_lock_open_grey600_24dp);
+            lockButton.setImageResource(R.drawable.ic_colorize_grey600_24dp);
             mPickView.setVisibility(View.VISIBLE);
         }
     }

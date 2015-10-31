@@ -40,7 +40,7 @@
     <style name="SettingItem">
         <item name="android:paddingLeft">@dimen/space_large</item>
         <item name="android:paddingRight">@dimen/space_large</item>
-        <item name="android:paddingTop">@dimen/space_normal</item>
+        <item name="android:paddingTop">@dimen/space_large</item>
         <item name="android:paddingBottom">@dimen/space_large</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

@@ -1,4 +1,4 @@
-package com.ben.colorpicker.ui;
+package com.ben.colorpicker.ui.main;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,11 +7,13 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 
 import com.ben.colorpicker.R;
+import com.ben.colorpicker.ui.picker.PickerActivity;
+import com.ben.colorpicker.ui.common.SelectPhotoActivity;
 import com.ben.colorpicker.ui.fragment.SampleFragmentPagerAdapter;
 
 import java.io.FileNotFoundException;
 
-public class MainActivityNew extends SelectPhotoActivity  {
+public class MainActivity extends SelectPhotoActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,7 @@ public class MainActivityNew extends SelectPhotoActivity  {
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
-                MainActivityNew.this));
+                MainActivity.this));
 
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
@@ -29,7 +31,7 @@ public class MainActivityNew extends SelectPhotoActivity  {
     }
 
     @Override
-    void setBitmapUri(Uri uri) throws FileNotFoundException {
+    public void setBitmapUri(Uri uri) throws FileNotFoundException {
         Intent intent = new Intent(this,PickerActivity.class);
         intent.putExtra(SelectPhotoActivity.KEY_IMAGE_URI,uri);
         startActivity(intent);

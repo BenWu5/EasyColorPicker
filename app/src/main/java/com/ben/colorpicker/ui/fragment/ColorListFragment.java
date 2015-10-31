@@ -78,7 +78,7 @@ public class ColorListFragment extends Fragment implements LoaderManager.LoaderC
 
     @Override
     public void copyOnClick(View view, ColorModel colorModel) {
-        CopyUtils.copyText("#" + ColorUtils.getBorW(colorModel.getColor()), getActivity());
+        CopyUtils.copyText("#" + ColorUtils.D2HEX(colorModel.getColor()), getActivity());
     }
 
     @Override

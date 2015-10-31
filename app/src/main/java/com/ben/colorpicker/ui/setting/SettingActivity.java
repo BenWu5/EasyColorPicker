@@ -12,7 +12,7 @@ import com.ben.colorpicker.BuildConfig;
 import com.ben.colorpicker.R;
 import com.ben.colorpicker.db.DataStore;
 import com.ben.colorpicker.provider.ColorProvider;
-import com.ben.colorpicker.ui.ToolbarActivity;
+import com.ben.colorpicker.ui.common.ToolbarActivity;
 import com.ben.colorpicker.ui.license.LicenseActivity;
 
 public class SettingActivity extends ToolbarActivity implements View.OnClickListener {
@@ -72,7 +72,7 @@ public class SettingActivity extends ToolbarActivity implements View.OnClickList
     }
 
     public void github() {
-        Uri uri = Uri.parse("https://github.com/developerbenwu/DrawableText");
+        Uri uri = Uri.parse("https://github.com/developerbenwu/EasyColorPicker");
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.setData(uri);

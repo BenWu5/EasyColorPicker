@@ -1,4 +1,4 @@
-package com.ben.colorpicker.ui;
+package com.ben.colorpicker.ui.common;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-
+//这个Activity提供选择图片的功能
 public abstract class SelectPhotoActivity extends AppCompatActivity {
     public  static final String KEY_IMAGE_URI = "key_image_uri";
 
@@ -46,7 +46,7 @@ public abstract class SelectPhotoActivity extends AppCompatActivity {
         return bitmap;
     }
 
-    abstract void setBitmapUri(Uri uri) throws FileNotFoundException;
+    public abstract void setBitmapUri(Uri uri) throws FileNotFoundException;
 
     public void selectPhoto() {
         Intent intent = new Intent();

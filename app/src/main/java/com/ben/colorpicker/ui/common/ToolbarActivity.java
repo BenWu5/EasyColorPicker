@@ -1,4 +1,4 @@
-package com.ben.colorpicker.ui;
+package com.ben.colorpicker.ui.common;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;

@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ben.colorpicker.R;
-import com.ben.colorpicker.ui.SelectPhotoActivity;
+import com.ben.colorpicker.ui.common.SelectPhotoActivity;
 import com.ben.colorpicker.ui.setting.SettingActivity;
 
 /**

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.ben.colorpicker.R;
-import com.ben.colorpicker.ui.ToolbarActivity;
+import com.ben.colorpicker.ui.common.ToolbarActivity;
 
 public class LicenseActivity extends ToolbarActivity  {
 

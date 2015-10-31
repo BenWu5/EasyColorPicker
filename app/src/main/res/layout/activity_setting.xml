@@ -1,33 +1,44 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:layout="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <include layout="@layout/include_toolbar" />
-    <TextView
-        android:id="@+id/clear_list"
-        android:text="@string/clear_list"
-        style="@style/SettingItem"/>
-    <TextView
-        android:id="@+id/about"
-        android:text="@string/about"
-        style="@style/SettingItem_Title"/>
-    <TextView
-        android:id="@+id/contact_us"
-        android:text="@string/contact_us"
-        style="@style/SettingItem"/>
-    <TextView
-        android:id="@+id/git_hub"
-        android:text="@string/git_hub"
-        style="@style/SettingItem"/>
-    <TextView
-        android:id="@+id/licenses"
-        android:text="@string/licenses"
-        style="@style/SettingItem"/>
-    <TextView
-        android:id="@+id/version"
-        android:text="@string/version"
-        style="@style/SettingItem"/>
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_toolbar" />
+
+        <TextView
+            android:id="@+id/clear_list"
+            style="@style/SettingItem"
+            android:text="@string/clear_list" />
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/SettingItem_Title"
+            android:text="@string/about" />
+
+        <TextView
+            android:id="@+id/contact_us"
+            style="@style/SettingItem"
+            android:text="@string/contact_us" />
+
+        <TextView
+            android:id="@+id/git_hub"
+            style="@style/SettingItem"
+            android:text="@string/git_hub" />
+
+        <TextView
+            android:id="@+id/licenses"
+            style="@style/SettingItem"
+            android:text="@string/licenses" />
+
+        <TextView
+            android:id="@+id/version"
+            style="@style/SettingItem"
+            android:text="@string/version" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">简易取色器</string>
+    <string name="action_settings">设置</string>
+    <string name="color_picker">取色器</string>
+    <string name="settings">设置</string>
+    <string name="color_list">颜色列表</string>
+    <string name="color_lens">Color lens</string>
+    <string name="RGB">RGB:</string>
+    <string name="HEX">HEX:</string>
+    <string name="note">备注</string>
+    <string name="about">关于</string>
+    <string name="contact_us">联系我们</string>
+    <string name="git_hub">Github地址</string>
+    <string name="licenses">Licenses</string>
+    <string name="clear_list">清空颜色列表</string>
+    <string name="feedback_title">反馈</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="share">分享</string>
+    <string name="copied_to_clipboard">已复制到剪贴板</string>
+    <string name="color">颜色</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+    <string name="version">版本</string>
+    <string name="clear_list_yes_or_no">确认清空? 数据将不能恢复</string>
+
+    <string name="photo_view_license">Copyright 2011, 2012 Chris Banes\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at \n
+        \n
+        http://www.apache.org/licenses/LICENSE-2.0
+        \n\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+    </string>
+    <string name="color_picker_license">
+        Copyright (C) 2015 Tvbarthel.\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at \n\n
+
+    http://www.apache.org/licenses/LICENSE-2.0
+\n\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+    </string>
+    <string name="added_to_list">已添加到颜色列表</string>
+
+</resources>
