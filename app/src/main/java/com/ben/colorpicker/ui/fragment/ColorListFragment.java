@@ -26,12 +26,14 @@ import com.ben.colorpicker.ui.recycler.SectionsDecoration;
 import com.ben.colorpicker.utils.ColorUtils;
 import com.ben.colorpicker.utils.CopyUtils;
 import com.ben.colorpicker.utils.ShareUtils;
+import com.ben.colorpicker.view.EmptyView;
 
 /**
  * Created by Hui on 2015/10/25.
  */
 public class ColorListFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>, ColorAdapter.MoreOnClickListener, ColorAdapter.CopyOnClickListener {
     ColorAdapter adapter;
+    private EmptyView emptyView;
 
     public static ColorListFragment newInstance() {
         ColorListFragment fragment = new ColorListFragment();
@@ -46,17 +48,20 @@ public class ColorListFragment extends Fragment implements LoaderManager.LoaderC
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        RecyclerView recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        emptyView = (EmptyView) view.findViewById(R.id.empty_view);
         setupRecyclerView(recyclerView);
         adapter = new ColorAdapter(getActivity(), null, this, this);
+        adapter.registerAdapterDataObserver(new AdapterObserver());
         recyclerView.setAdapter(adapter);
         getLoaderManager().initLoader(1, null, this);
-        return recyclerView;
+        return view;
     }
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-        return DataStore.query().projection(Tables.Color.PROJECTION).sortOrderDesc(Tables.Color.CREATE_TIME.getName()).query(getActivity(),ColorProvider.uriColor());
+        return DataStore.query().projection(Tables.Color.PROJECTION).sortOrderDesc(Tables.Color.CREATE_TIME.getName()).query(getActivity(), ColorProvider.uriColor());
     }
 
     @Override
@@ -90,14 +95,14 @@ public class ColorListFragment extends Fragment implements LoaderManager.LoaderC
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.delete:
-                        DataStore.delete().model(colorModel).delete(getActivity(),ColorProvider.uriColor());
+                        DataStore.delete().model(colorModel).delete(getActivity(), ColorProvider.uriColor());
                         break;
                     case R.id.edit:
-                        ColorDialog.newInstance(colorModel).show(getChildFragmentManager(),"");
+                        ColorDialog.newInstance(colorModel).show(getChildFragmentManager(), "");
                         break;
                     case R.id.share:
-                        ShareUtils.share("#"+ColorUtils.D2HEX(colorModel.getColor()),
-                                TextUtils.isEmpty(colorModel.getNote()) ? null: colorModel.getNote(), getActivity());
+                        ShareUtils.share("#" + ColorUtils.D2HEX(colorModel.getColor()),
+                                TextUtils.isEmpty(colorModel.getNote()) ? null : colorModel.getNote(), getActivity());
                         break;
                 }
                 return true;
@@ -105,4 +110,38 @@ public class ColorListFragment extends Fragment implements LoaderManager.LoaderC
         });
         popup.show();
     }
+
+
+    private class AdapterObserver extends RecyclerView.AdapterDataObserver {
+        @Override
+        public void onChanged() {
+            super.onChanged();
+            emptyView.setEmpty(adapter.getItemCount() == 0);
+        }
+
+        @Override
+        public void onItemRangeChanged(int positionStart, int itemCount) {
+            super.onItemRangeChanged(positionStart, itemCount);
+            emptyView.setEmpty(adapter.getItemCount() == 0);
+        }
+
+        @Override
+        public void onItemRangeInserted(int positionStart, int itemCount) {
+            super.onItemRangeInserted(positionStart, itemCount);
+            emptyView.setEmpty(adapter.getItemCount() == 0);
+        }
+
+        @Override
+        public void onItemRangeRemoved(int positionStart, int itemCount) {
+            super.onItemRangeRemoved(positionStart, itemCount);
+            emptyView.setEmpty(adapter.getItemCount() == 0);
+        }
+
+        @Override
+        public void onItemRangeMoved(int fromPosition, int toPosition, int itemCount) {
+            super.onItemRangeMoved(fromPosition, toPosition, itemCount);
+            emptyView.setEmpty(adapter.getItemCount() == 0);
+        }
+    }
+
 }

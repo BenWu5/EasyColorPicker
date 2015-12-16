@@ -13,9 +13,9 @@
 
     <ImageView
         android:id="@+id/add_to_db"
-        android:layout_marginRight="@dimen/space_small"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/space_small"
         android:layout_weight="1"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -24,10 +24,10 @@
 
     <ImageView
         android:id="@+id/share"
-        android:layout_marginLeft="@dimen/space_small"
-        android:layout_marginRight="@dimen/space_small"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
         android:layout_weight="1"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -36,10 +36,10 @@
 
     <ImageView
         android:id="@+id/open_photo"
-        android:layout_marginLeft="@dimen/space_small"
-        android:layout_marginRight="@dimen/space_small"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
         android:layout_weight="1"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
@@ -48,9 +48,9 @@
 
     <ImageView
         android:id="@+id/take_photo"
-        android:layout_marginLeft="@dimen/space_small"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_small"
         android:layout_weight="1"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"

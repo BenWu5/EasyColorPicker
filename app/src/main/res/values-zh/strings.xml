@@ -52,5 +52,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
     </string>
     <string name="added_to_list">已添加到颜色列表</string>
+    <string name="null_list">没有收藏</string>
+    <string name="need_access">请允许访问</string>
+    <string name="camera">摄像头</string>
+    <string name="external_storage">储存空间</string>
+    <string name="not_find_sd">请确认已插入SD卡</string>
 
 </resources>

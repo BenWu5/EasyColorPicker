@@ -42,7 +42,7 @@ public class PickerActivity extends SelectPhotoActivity implements View.OnClickL
     PickerView mPickView;
     private int mColor = Color.WHITE;  //默认颜色
 
-    private static final int TEXT_SIZETEXT_SIZE = 18 ;  //RGB和HEX默认的文字大小
+    private static final int TEXT_SIZETEXT_SIZE = 18;  //RGB和HEX默认的文字大小
     private TextPaint textPaint;  //用于绘制RGBview和 HEXview 的文字
 
     @Override

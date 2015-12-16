@@ -54,5 +54,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
     </string>
     <string name="added_to_list">Added to list</string>
+    <string name="null_list">Null</string>
+    <string name="need_access">You need to grant access to </string>
+    <string name="camera">camera</string>
+    <string name="external_storage">external storage</string>
+    <string name="not_find_sd">not find SDCard</string>
 
 </resources>

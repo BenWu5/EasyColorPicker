@@ -1,7 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/recyclerView"
-    style="@style/AdapterView"
-    android:paddingLeft="@dimen/space_small"
-    android:paddingRight="@dimen/space_small"
-    />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        style="@style/AdapterView"
+        android:elevation="0dp"
+        android:paddingLeft="@dimen/space_small"
+        android:paddingRight="@dimen/space_small" />
+    <com.ben.colorpicker.view.EmptyView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/null_list" />
+
+
+</FrameLayout>
