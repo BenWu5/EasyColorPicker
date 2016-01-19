@@ -57,5 +57,7 @@ limitations under the License.
     <string name="camera">摄像头</string>
     <string name="external_storage">储存空间</string>
     <string name="not_find_sd">请确认已插入SD卡</string>
+    <string name="alipay">支付宝</string>
+    <string name="donation">捐赠</string>
 
 </resources>

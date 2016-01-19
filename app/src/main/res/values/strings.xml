@@ -59,5 +59,6 @@ limitations under the License.
     <string name="camera">camera</string>
     <string name="external_storage">external storage</string>
     <string name="not_find_sd">not find SDCard</string>
-
+    <string name="alipay">Alipay</string>
+    <string name="donation">Donation</string>
 </resources>

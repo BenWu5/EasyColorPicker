@@ -13,6 +13,7 @@ import com.ben.colorpicker.R;
 import com.ben.colorpicker.db.DataStore;
 import com.ben.colorpicker.provider.ColorProvider;
 import com.ben.colorpicker.ui.common.ToolbarActivity;
+import com.ben.colorpicker.ui.donation.AlipayDialog;
 import com.ben.colorpicker.ui.license.LicenseActivity;
 
 public class SettingActivity extends ToolbarActivity implements View.OnClickListener {
@@ -29,6 +30,7 @@ public class SettingActivity extends ToolbarActivity implements View.OnClickList
         findViewById(R.id.contact_us).setOnClickListener(this);
         findViewById(R.id.git_hub).setOnClickListener(this);
         findViewById(R.id.licenses).setOnClickListener(this);
+        findViewById(R.id.donation).setOnClickListener(this);
         TextView version = (TextView) findViewById(R.id.version);
         version.setText(String.valueOf(BuildConfig.VERSION_NAME));
 
@@ -58,6 +60,10 @@ public class SettingActivity extends ToolbarActivity implements View.OnClickList
             case R.id.licenses:
                 licenseActivity();
                 break;
+            case R.id.donation:
+                AlipayDialog alipayDialog = new AlipayDialog();
+                alipayDialog.show(getSupportFragmentManager(), "alipayDialog");
+                break;
         }
     }
 
@@ -78,7 +84,8 @@ public class SettingActivity extends ToolbarActivity implements View.OnClickList
         intent.setData(uri);
         startActivity(intent);
     }
-    public void licenseActivity(){
+
+    public void licenseActivity() {
         Intent intent = new Intent(this, LicenseActivity.class);
         startActivity(intent);
     }

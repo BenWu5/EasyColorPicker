@@ -35,10 +35,15 @@
             android:id="@+id/licenses"
             style="@style/SettingItem"
             android:text="@string/licenses" />
+        <TextView
+            android:id="@+id/donation"
+            style="@style/SettingItem"
+            android:text="@string/donation" />
 
         <TextView
             android:id="@+id/version"
             style="@style/SettingItem"
             android:text="@string/version" />
+
     </LinearLayout>
 </ScrollView>

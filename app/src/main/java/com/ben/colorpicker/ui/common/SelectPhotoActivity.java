@@ -72,8 +72,9 @@ public abstract class SelectPhotoActivity extends AppCompatActivity {
         if (permissionsList.size() > 0) {
             if (permissionsNeeded.size() > 0) {
                 String message = getString(R.string.need_access) + " " + permissionsNeeded.get(0);
-                for (int i = 1; i < permissionsNeeded.size(); i++)
+                for (int i = 1; i < permissionsNeeded.size(); i++) {
                     message = message + ", " + permissionsNeeded.get(i);
+                }
                 showMessageOKCancel(message,
                         new DialogInterface.OnClickListener() {
                             @Override
